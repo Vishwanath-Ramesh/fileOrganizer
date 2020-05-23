@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>File Organizer</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self';" />
+</head>
+
+<body>
+    <h1 class="text-center">File Organizer</h1>
+    <div class="container">
+<div class="row">
+    <div class="col form-group">
+        <label for="FilePath">Files Path</label>
+        <input id="FilePath" type="text" class="form-control" />
+    </div>
+</div>
+<div class="row">
+    <div class="col form-group">
+        <label for="Ddl_Organize">Organize By</label>
+        <select id="Ddl_Organize" class="form-control">
+            <option value="--Select--">--Select--</option>
+        </select>
+    </div>
+</div>
+<div class="row">
+    <div id='Div_CheckPath' class="col form-group">
+        <input type="checkbox" id='Chk_AlreadyPath'>Move to folder if already exists</input>
+        <input id='Txt_AlreadyPath' type="text" class="form-control" />
+    </div>
+</div>
+<div class="row">
+    <button id="Btn_Submit" type="submit" text="Organize" class="btn btn-primary">Submit</button>
+</div>
+    </div>
+    
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+    <script src="./view.js"></script>
+    <!-- <script>document.write(process.versions.electron)</script>. -->
+</body>
+
+</html>
